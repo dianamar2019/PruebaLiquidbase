@@ -1,0 +1,21 @@
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.1
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.1.xsd">
+    <changeSet author="DMARTINEZ" id="9">
+      <insert 
+            tableName="USUARIOS">
+        <column name="ID" value="1234567890"/>
+ 	<column name="NOMBRE" value="JUAN"/>
+ 	<column name="APELLIDO" value="PEREZ"/>
+    </insert>
+	<insert 
+            tableName="PERMISOS">
+        <column name="ID_USUARIO" value="1234567890"/>
+ 	<column name="ID_PERMISO" value="001"/>
+ 	<column name="NOMBRE_PERMISO" value="APROBAR"/>
+	<column name="DESCRIPCION" value="PUEDE APROBAR VACACIONES"/>
+    </insert>
+    </changeSet>
+</databaseChangeLog>

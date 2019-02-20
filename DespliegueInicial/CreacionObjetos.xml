@@ -1,0 +1,33 @@
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.1
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.1.xsd">
+    <changeSet author="DMARTINEZ" id="1">
+        <createTable tableName="USUARIOS">
+            <column name="ID" type="NUMBER(10)"/>
+            <column name="NOMBRE" type="VARCHAR2(20)"/>
+            <column name="APELLIDO" type="VARCHAR2(20)"/>
+            <column name="EDAD" type="NUMBER(3)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="DMARTINEZ" id="2">
+        <createTable tableName="PERMISOS">
+            <column name="ID_USUARIO" type="NUMBER(10)"/>
+	    <column name="ID_PERMISO" type="NUMBER(3)"/>
+            <column name="NOMBRE_PERMISO" type="VARCHAR2(20)"/>
+            <column name="DESCRIPCION" type="VARCHAR2(50)"/>
+        </createTable>
+    </changeSet>
+     <changeSet author="DMARTINEZ" id="3">
+        <addPrimaryKey columnNames="ID" tableName="USUARIOS"/>
+    </changeSet>
+    <changeSet author="DMARTINEZ" id="4">
+        <addPrimaryKey columnNames="ID_PERMISO" tableName="PERMISOS"/>
+    </changeSet>
+    <changeSet author="DMARTINEZ" id="5">
+        <addForeignKeyConstraint baseColumnNames="ID_USUARIO"
+            baseTableName="PERMISOS" constraintName="FK_PERMISO"
+            referencedColumnNames="ID" referencedTableName="USUARIOS"/>
+    </changeSet>
+</databaseChangeLog>
