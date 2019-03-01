@@ -1,2 +1,2 @@
 @echo off
-call Liquibase --changeLogFile=C:\VASS\PruebaLiquidbasewc\rollback.xml update
+call Liquibase --changeLogFile=/var/lib/jenkins/workspace/Pruebaliquidbase/rollback.xml update

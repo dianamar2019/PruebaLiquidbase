@@ -4,9 +4,9 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9 http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
     
    	<changeSet author="DMARTINEZ" id="11" runOnChange="true" runInTransaction="true">
-    	<sqlFile  encoding="UTF8" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" stripComments="true"  path="C:\VASS\PruebaLiquidbasewc\Upgrade\ProcedureUpdateUsuarios.sql"/>
+    	<sqlFile  encoding="UTF8" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" stripComments="true"  path="/var/lib/jenkins/workspace/Pruebaliquidbase/Upgrade/ProcedureUpdateUsuarios.sql"/>
 	</changeSet>
 	<changeSet author="DMARTINEZ" id="12" runOnChange="true" runInTransaction="true">
-    	<sqlFile  encoding="UTF8" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" stripComments="true"  path="C:\VASS\PruebaLiquidbasewc\Upgrade\InsertarUsuariosPermisos.sql"/>
+    	<sqlFile  encoding="UTF8" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" stripComments="true"  path="/var/lib/jenkins/workspace/Pruebaliquidbase/Upgrade/InsertarUsuariosPermisos.sql"/>
 	</changeSet>
 	</databaseChangeLog>
