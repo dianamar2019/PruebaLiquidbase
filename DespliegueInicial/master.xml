@@ -10,9 +10,9 @@
             WHERE author='DMARTINEZ'
         </sqlCheck>
     </preConditions>
-    <include file="C:\VASS\PruebaLiquidbasewc\DespliegueInicial\CreacionObjetos.xml"/>
-    <include file="C:\VASS\PruebaLiquidbasewc\DespliegueInicial\InsertarDatos.xml"/>
-    <include file="C:\VASS\PruebaLiquidbasewc\DespliegueInicial\CrearVista.xml"/>
+    <include file="/var/lib/jenkins/workspace/Pruebaliquidbase/DespliegueInicial/CreacionObjetos.xml"/>
+    <include file="/var/lib/jenkins/workspace/Pruebaliquidbase/DespliegueInicial/InsertarDatos.xml"/>
+    <include file="/var/lib/jenkins/workspace/Pruebaliquidbase/DespliegueInicial/CrearVista.xml"/>
     <!-- Do not include any more changes in this file -->
     <changeSet author="DMARTINEZ" id="1" />
 </databaseChangeLog>
