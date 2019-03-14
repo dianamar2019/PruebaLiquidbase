@@ -7,8 +7,6 @@
         
             <dropTable tableName="USUARIOS" cascadeConstraints="true"/>
 	    <dropTable tableName="PERMISOS" cascadeConstraints="true"/>
-	    <dropTable tableName="DATABASECHANGELOG" cascadeConstraints="true"/>
-	    <dropTable tableName="DATABASECHANGELOGLOCK" cascadeConstraints="true"/>
 	    <dropView  viewName="V_USU_PERMISO"/>
     </changeSet>
 </databaseChangeLog>
