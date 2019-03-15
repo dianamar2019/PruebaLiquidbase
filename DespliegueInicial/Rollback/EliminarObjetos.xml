@@ -10,7 +10,7 @@
 	    <dropView  viewName="V_USU_PERMISO"/>
 	    
     </changeSet>
-    <changeSet author="DMARTINEZ" id="9">
-	<dropProcedure procedureName="update_usuarios"/>  
+    <changeSet author="DMARTINEZ" id="9" runOnChange="true" runInTransaction="true">
+	<sqlFile  encoding="UTF8" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" stripComments="true"  path="/var/lib/jenkins/workspace/Pruebaliquidbase/DespliegueInicial/Rollback/Eliminarprocedure.sql"/> 
     </changeSet>
 </databaseChangeLog>
