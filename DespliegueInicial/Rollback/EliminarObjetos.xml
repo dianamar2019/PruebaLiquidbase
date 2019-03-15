@@ -8,5 +8,6 @@
             <dropTable tableName="USUARIOS" cascadeConstraints="true"/>
 	    <dropTable tableName="PERMISOS" cascadeConstraints="true"/>
 	    <dropView  viewName="V_USU_PERMISO"/>
+	    <dropProcedure procedureName="update_usuarios"/>
     </changeSet>
 </databaseChangeLog>
