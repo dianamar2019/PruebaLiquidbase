@@ -4,14 +4,15 @@ BEGIN
   SELECT COUNT(*)
   INTO   V_NUM
   FROM   USER_OBJECTS
-  WHERE  OBJECT_NAME = 'update_usuarios'
+  WHERE  OBJECT_NAME = 'UPDATE_USUARIOS'
   AND    OBJECT_TYPE = 'PROCEDURE'; 
 
   IF V_NUM > 0 THEN
-    EXECUTE IMMEDIATE 'drop procedure update_usuarios';
+    EXECUTE IMMEDIATE 'drop procedure UPDATE_USUARIOS';
     DBMS_OUTPUT.PUT_LINE('Dropped');
   END IF;
 
 END;
 /
+
 
