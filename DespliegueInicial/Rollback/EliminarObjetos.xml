@@ -5,14 +5,13 @@
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.1.xsd">
     <changeSet author="DMARTINEZ" id="8">
         
-            <dropTable tableName="USUARIOS" cascadeConstraints="true"/>
-	    <dropTable tableName="PERMISOS" cascadeConstraints="true"/>
-	    <dropView  viewName="V_USU_PERMISO"/>
+           <sqlFile  encoding="UTF8" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" stripComments="true"  path="/var/lib/jenkins/workspace/Pruebaliquidbase/DespliegueInicial/Rollback/Eliminarprocedure.sql"/> 
 	    
     </changeSet>
-   <changeSet author="DMARTINEZ" id="9">
-        
-           <sqlFile  encoding="UTF8" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" stripComments="true"  path="/var/lib/jenkins/workspace/Pruebaliquidbase/DespliegueInicial/Rollback/Eliminarprocedure.sql"/>
-	    
+   <changeSet author="DMARTINEZ" id="9"> 
+	    <dropTable tableName="USUARIOS" cascadeConstraints="true"/>
+	    <dropTable tableName="PERMISOS" cascadeConstraints="true"/>
+	    <dropView  viewName="V_USU_PERMISO"/>   
+              
     </changeSet>
 </databaseChangeLog>

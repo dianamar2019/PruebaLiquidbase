@@ -7,6 +7,6 @@
     	<sqlFile  encoding="UTF8" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" stripComments="true"  path="/var/lib/jenkins/workspace/Pruebaliquidbase/Upgrade/ProcedureUpdateUsuarios.sql"/>
 	</changeSet>
 	<changeSet author="DMARTINEZ" id="12" runOnChange="true" runInTransaction="true">
-    	<sqlFile  encoding="UTF8" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" stripComments="true"  path="/var/lib/jenkins/workspace/Pruebaliquidbase/DespliegueInicial/Rollback/Eliminarprocedure.sql"/>
+    	<sqlFile  encoding="UTF8" endDelimiter="\n/\s*\n|\n/\s*$" splitStatements="true" stripComments="true"  path="/var/lib/jenkins/workspace/Pruebaliquidbase/Upgrade/InsertarUsuariosPermisos.sql"/>
 	</changeSet>
 	</databaseChangeLog>
