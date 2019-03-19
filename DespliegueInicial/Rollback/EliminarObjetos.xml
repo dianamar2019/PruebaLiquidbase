@@ -3,9 +3,15 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.1
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.1.xsd">
-    <changeSet author="DMARTINEZ" id="13">
+    <changeSet author="DMARTINEZ" id="14">
         <sql>
            	drop procedure UPDATE_USUARIOS;	
         </sql>
     </changeSet>
+    <changeSet author="DMARTINEZ" id="9"> 
+	    <dropTable tableName="USUARIOS" cascadeConstraints="true"/>
+	    <dropTable tableName="PERMISOS" cascadeConstraints="true"/>
+	    <dropView  viewName="V_USU_PERMISO"/>             
+    </changeSet>
+
 </databaseChangeLog>
