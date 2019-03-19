@@ -4,23 +4,8 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.1
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.1.xsd">
     <changeSet author="DMARTINEZ" id="13">
-           <sql>
-           	DECLARE
-  			V_NUM NUMBER;
-		BEGIN     
-  			SELECT COUNT(*)
-  			INTO   V_NUM
-  			FROM   USER_OBJECTS
-  			WHERE  OBJECT_NAME = 'UPDATE_USUARIOS'
-  			AND    OBJECT_TYPE = 'PROCEDURE'; 
-
-  			IF V_NUM > 0 THEN
-    				EXECUTE IMMEDIATE 'drop procedure UPDATE_USUARIOS';
-    			DBMS_OUTPUT.PUT_LINE('Dropped');
-  			END IF;
-
-		END;
-		/
+        <sql>
+           	drop procedure UPDATE_USUARIOS;	
         </sql>
     </changeSet>
 </databaseChangeLog>
